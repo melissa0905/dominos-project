@@ -14,7 +14,7 @@ const CartReducer = (state = initState, action) => {
             return state;
         } 
         else {
-            const Tprice = state.totalPrice + product.price * quantity; // product.price diyince toplam yerdeki toplam geliyor .
+            const Tprice = state.totalPrice + product.price * quantity; 
             const Tquantities = state.totalQuantities + quantity;
             product.quantity = quantity;
             alert("Ürün Sepete eklenmiştir.");
